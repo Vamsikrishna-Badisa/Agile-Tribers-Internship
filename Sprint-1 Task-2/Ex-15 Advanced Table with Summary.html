@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading Table</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-style: solid;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #120505;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .summary {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><center>Student Grading Table</center></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>History</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>92</td>
+                <td>88.75</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>78</td>
+                <td>84</td>
+                <td>80</td>
+                <td>76</td>
+                <td>79.5</td>
+            </tr>
+            <tr>
+                <td>Sam Brown</td>
+                <td>95</td>
+                <td>93</td>
+                <td>91</td>
+                <td>97</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Emily White</td>
+                <td>72</td>
+                <td>80</td>
+                <td>75</td>
+                <td>78</td>
+                <td>76.25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="summary">
+        <p><strong>Summary:</strong></p>
+        <p><strong>Minimum Score:</strong> 72 (Emily White)</p>
+        <p><strong>Average Score for All Students:</strong> 84.875</p>
+    </div>
+
+</body>
+</html>
