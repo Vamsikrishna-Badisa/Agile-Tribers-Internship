@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course and Interests Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .title-bar {
+            background-color: #99c2ff;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .for-credit {
+            font-weight: bold;
+        }
+        .listener {
+            font-style: italic;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .text-section {
+            flex: 1;
+        }
+        .image-section img {
+            width: 200px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">Courses</div>
+        <div class="content">
+            <div class="text-section">
+                <p>Here are some courses I've taken:</p>
+                <table>
+                    <tr>
+                        <th>Course Number</th>
+                        <th>Course Title</th>
+                        <th>Semester Taken</th>
+                    </tr>
+                    <tr>For Credit</tr>
+                    <tr class="for-credit">
+                        <td>6.813</td>
+                        <td>User Interface Design</td>
+                        <td>Spring 2014</td>
+                    </tr>
+                    <tr class="for-credit">
+                        <td>6.034</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr class="for-credit">
+                        <td>6.006</td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr class="listener">
+                        <td>6.867</td>
+                        <td>Machine Learning</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr class="listener">
+                        <td>6.830</td>
+                        <td>Database Systems</td>
+                        <td>Fall 2012</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image-section">
+                <img src="E:/Funny Dog Scientist.png" alt="Funny Dog Scientist">
+            </div>
+        </div>
+        <div class="title-bar">Interests</div>
+        <p>I am interested in <strong>HCI</strong>, <em>memes</em>, and <em>youtube videos</em>.</p>
+    </div>
+</body>
+</html>
