@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Job Simulation Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a:hover,
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px 40px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #004080;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      flex: 1 1 300px;
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #003060;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #003060;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #aad;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .service-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JobSim</h1>
+  </header>
+
+  <main>
+    <h2>What We Offer</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Interactive Job Simulations</h3>
+        <p>Practice real-world tasks in virtual work environments tailored to specific careers like IT, healthcare, customer service, and more.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Skill Assessments</h3>
+        <p>Get detailed feedback and insights into your strengths and growth areas through real-time performance evaluations.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Career Matching</h3>
+        <p>Discover which roles align best with your skills and personality using our intelligent career-matching engine.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Guided Learning Paths</h3>
+        <p>Follow structured modules designed to help you build specific job skills and competencies step by step.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Certifications</h3>
+        <p>Earn digital credentials upon completing simulations that you can showcase to employers or add to your resume.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Partner Opportunities</h3>
+        <p>Top performers can get direct referrals and access to internships, apprenticeships, and job openings via partner companies.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us: <a href="mailto:info@jobsim.com">info@jobsim.com</a> | <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    <p>
+      <a href="#">LinkedIn</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
