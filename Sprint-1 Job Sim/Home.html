@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Simulation Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #004080, #0074D9);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    footer {
+      background-color: #003060;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #aad;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>JobSim</h1>
+    </header>
+
+    <section class="hero">
+      <h2>Explore Real-World Careers Through Simulation</h2>
+      <p>Gain hands-on experience, discover your passion, and build job-ready skills in a virtual yet realistic environment.</p>
+    </section>
+
+    <section class="section">
+      <h2 style="text-align:center; margin-bottom:30px;">Our Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Immersive Simulations</h3>
+          <p>Step into realistic job scenarios tailored to different industries and skill levels.</p>
+        </div>
+        <div class="feature">
+          <h3>Skill Assessments</h3>
+          <p>Receive feedback and performance metrics to track and improve your competencies.</p>
+        </div>
+        <div class="feature">
+          <h3>Career Guidance</h3>
+          <p>Discover potential career paths based on your interests and performance data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>At JobSim, our mission is to close the gap between education and employment through cutting-edge virtual experiences. Whether you're a student, job seeker, or career changer, we empower you with the tools and confidence to succeed in today’s workforce.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:info@jobsim.com">info@jobsim.com</a> | <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a>_
