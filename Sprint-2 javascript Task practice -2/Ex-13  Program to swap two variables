@@ -1,0 +1,13 @@
+let a = 5;
+let b = 10;
+
+console.log("Before swap:");
+console.log("a =", a, ", b =", b);
+
+// Swap using a third variable
+let temp = a;
+a = b;
+b = temp;
+
+console.log("After swap (using third variable):");
+console.log("a =", a, ", b =", b);
