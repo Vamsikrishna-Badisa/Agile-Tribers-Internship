@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "hero main"
+        "sidebar main"
+        "sidebar extra"
+        "related-images related-posts"
+        "footer footer";
+      grid-template-columns: 1fr 2fr;
+      grid-auto-rows: 100px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .container > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: white;
+    }
+
+    .header         { grid-area: header; background: #63cdda; }
+    .hero           { grid-area: hero; background: #cabbe9; color: white; }
+    .main           { grid-area: main; background: #f6b93b; color: white; }
+    .sidebar        { grid-area: sidebar; background: #78e08f; }
+    .extra          { grid-area: extra; background: #636e72; }
+    .related-images { grid-area: related-images; background: #38ada9; }
+    .related-posts  { grid-area: related-posts; background: #f8a5c2; color: white; }
+    .footer         { grid-area: footer; background: #f39c12; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="hero">Hero</div>
+    <div class="main">Main Content</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="extra">Extra Content</div>
+    <div class="related-images">Related Images</div>
+    <div class="related-posts">Related Posts</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
