@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Boarding Pass Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .barcode {
+        background: repeating-linear-gradient(
+          90deg,
+          black,
+          black 2px,
+          white 2px,
+          white 4px
+        );
+        width: 40px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center min-h-screen p-4">
+    <div class="space-y-4">
+      <!-- Two Boarding Passes -->
+      <div class="w-[750px] max-w-full bg-white rounded-xl shadow overflow-hidden border-[6px] border-yellow-400">
+        <div class="flex w-full">
+          <!-- Left Section -->
+          <div class="w-2/3 p-6 border-r border-gray-300">
+            <p class="text-xs text-yellow-600 uppercase tracking-widest font-semibold">Boarding Pass to .....</p>
+
+            <div class="mt-4">
+              <p class="text-sm font-bold">Name</p>
+              <p class="text-sm">Courtney Simpson</p>
+            </div>
+
+            <div class="mt-4 flex gap-8">
+              <div>
+                <p class="text-sm font-bold">Time</p>
+                <p class="text-sm">10.30 AM</p>
+              </div>
+              <div>
+                <p class="text-sm font-bold">Date</p>
+                <p class="text-sm">August 1, 2023</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-sm font-bold">Special Message</p>
+              <p class="text-sm text-gray-500">Write your message here</p>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="w-1/3 p-4 flex flex-col justify-between items-center">
+            <!-- World map with airplane icon (placeholder) -->
+            <div class="relative w-full h-24 bg-gray-100 rounded-md overflow-hidden flex items-center justify-center">
+              <img src="E:/Internship\Sprint-3/Job Simulator/image-2.png" alt="Map" class="object-cover opacity-30 absolute inset-0 w-full h-full" />
+              <div class="text-yellow-500 text-2xl z-10">✈️</div>
+            </div>
+
+            <!-- Barcode & Details -->
+            <div class="flex mt-4 w-full justify-between text-[11px]">
+              <div>
+                <p><span class="font-bold">Name of Passenger:</span><br/>Courtney Simpson</p>
+                <p class="mt-2"><span class="font-bold">Destination:</span><br/>Best of Anywhere</p>
+                <p class="mt-2"><span class="font-bold">Date:</span><br/>August 1, 2023</p>
+                <p class="mt-2"><span class="font-bold">Flight Class Seat:</span><br/>DHMC First A1</p>
+              </div>
+              <div class="barcode self-start ml-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second pass (duplicate for layout) -->
+      <div class="w-[750px] max-w-full bg-white rounded-xl shadow overflow-hidden border-[6px] border-yellow-400">
+        <div class="flex w-full">
+          <!-- Left Section -->
+          <div class="w-2/3 p-6 border-r border-gray-300">
+            <p class="text-xs text-yellow-600 uppercase tracking-widest font-semibold">Boarding Pass to .....</p>
+
+            <div class="mt-4">
+              <p class="text-sm font-bold">Name</p>
+              <p class="text-sm">Courtney Simpson</p>
+            </div>
+
+            <div class="mt-4 flex gap-8">
+              <div>
+                <p class="text-sm font-bold">Time</p>
+                <p class="text-sm">10.30 AM</p>
+              </div>
+              <div>
+                <p class="text-sm font-bold">Date</p>
+                <p class="text-sm">August 1, 2023</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-sm font-bold">Special Message</p>
+              <p class="text-sm text-gray-500">Write your message here</p>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="w-1/3 p-4 flex flex-col justify-between items-center">
+            <!-- World map with airplane icon (placeholder) -->
+            <div class="relative w-full h-24 bg-gray-100 rounded-md overflow-hidden flex items-center justify-center">
+              <img src="E:/Internship/Sprint-3/Job Simulator/image-2.png" alt="Map" class="object-cover opacity-30 absolute inset-0 w-full h-full" />
+              <div class="text-yellow-500 text-2xl z-10">✈️</div>
+            </div>
+
+            <!-- Barcode & Details -->
+            <div class="flex mt-4 w-full justify-between text-[11px]">
+              <div>
+                <p><span class="font-bold">Name of Passenger:</span><br/>Courtney Simpson</p>
+                <p class="mt-2"><span class="font-bold">Destination:</span><br/>Best of Anywhere</p>
+                <p class="mt-2"><span class="font-bold">Date:</span><br/>August 1, 2023</p>
+                <p class="mt-2"><span class="font-bold">Flight Class Seat:</span><br/>DHMC First A1</p>
+              </div>
+              <div class="barcode self-start ml-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
