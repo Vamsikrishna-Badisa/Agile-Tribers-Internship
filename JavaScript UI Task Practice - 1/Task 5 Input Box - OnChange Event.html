@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input OnChange Event</title>
+</head>
+<body>
+
+  <input type="text" id="userInput" onchange="handleChange()" placeholder="Type something..." />
+  <h1 id="output"></h1>
+
+  <script>
+    function handleChange() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").innerHTML = "Input Changed: " + input;
+    }
+  </script>
+
+</body>
+</html>

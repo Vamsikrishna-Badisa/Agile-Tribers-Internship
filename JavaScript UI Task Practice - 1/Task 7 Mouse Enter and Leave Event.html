@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Events</title>
+  <style>
+    #hoverBox {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="hoverBox" 
+       onmouseenter="mouseEnter()" 
+       onmouseleave="mouseLeave()">
+    Hover over me
+  </div>
+
+  <p id="message"></p>
+
+  <script>
+    function mouseEnter() {
+      document.getElementById("message").innerHTML = "Mouse entered!";
+    }
+
+    function mouseLeave() {
+      document.getElementById("message").innerHTML = "Mouse left!";
+    }
+  </script>
+
+</body>
+</html>

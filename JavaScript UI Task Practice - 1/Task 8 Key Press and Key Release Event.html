@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Events</title>
+</head>
+<body>
+
+  <input type="text" id="keyInput" placeholder="Type something..." 
+         onkeydown="keyPressed()" 
+         onkeyup="keyReleased()" />
+
+  <script>
+    function keyPressed() {
+      console.log("Key pressed!");
+    }
+
+    function keyReleased() {
+      console.log("Key released!");
+    }
+  </script>
+
+</body>
+</html>
