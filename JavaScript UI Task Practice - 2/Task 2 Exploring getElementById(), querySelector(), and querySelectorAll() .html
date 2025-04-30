@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Element Selection Demo</title>
+  <style>
+    .highlight {
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="mainTitle">Original Title</h2>
+
+  <div class="highlight">Box 1</div>
+  <div class="highlight">Box 2</div>
+  <div class="highlight">Box 3</div>
+
+  <button onclick="applyChanges()">Apply Changes</button>
+
+  <script>
+    function applyChanges() {
+      // getElementById()
+      const titleElement = document.getElementById("mainTitle");
+      titleElement.innerText = "Title Changed using getElementById()";
+      console.log("getElementById():", titleElement);
+
+      // querySelector()
+      const firstBox = document.querySelector(".highlight");
+      firstBox.style.backgroundColor = "lightblue";
+      console.log("querySelector():", firstBox);
+
+      // querySelectorAll()
+      const allBoxes = document.querySelectorAll(".highlight");
+      allBoxes.forEach((box, index) => {
+        box.style.borderColor = "blue";
+        box.style.fontWeight = "bold";
+        console.log(`querySelectorAll()[${index}]:`, box);
+      });
+    }
+  </script>
+
+</body>
+</html>
