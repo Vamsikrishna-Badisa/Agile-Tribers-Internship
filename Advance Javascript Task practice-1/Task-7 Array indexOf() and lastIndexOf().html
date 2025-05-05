@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array indexOf() and lastIndexOf()</title>
+</head>
+<body>
+  <h2>Find First and Last Occurrence of an Element</h2>
+
+  <p><strong>Array:</strong> [1, 2, 3, 2, 4, 2, 5]</p>
+
+  <label for="element">Enter Element to Search:</label>
+  <input type="number" id="element">
+  <button onclick="findOccurrences()">Find</button>
+  <p><strong>Result:</strong> <span id="demo"></span></p>
+</body>
+<script>
+  const numbers = [1, 2, 3, 2, 4, 2, 5];
+  function findElementPositions(arr, target) {
+    return {
+      firstIndex: arr.indexOf(target),
+      lastIndex: arr.lastIndexOf(target)
+    };
+  }
+  function findOccurrences() {
+    const value = parseInt(document.getElementById("element").value);
+    const result = findElementPositions(numbers, value);
+    document.getElementById("demo").textContent = JSON.stringify(result);
+  }
+</script>
+</html>

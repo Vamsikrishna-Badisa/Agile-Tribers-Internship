@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map Objects - Student Scores</title>
+</head>
+<body>
+  <h2>Student Score Lookup</h2>
+
+  <p><strong>Students:</strong> Vamsikrishna (85), Ram (92), Anwar (78)</p>
+
+  <label for="studentName">Enter Student Name:</label>
+  <input type="text" id="studentName" />
+  <button onclick="showScore()">Get Score</button>
+
+  <p><strong>Score:</strong> <span id="demo"></span></p>
+</body>
+
+<script>
+  // Student data
+  const students = [
+    { name: 'Vamsikrishna', score: 85 },
+    { name: 'Ram', score: 92 },
+    { name: 'Anwar', score: 78 }
+  ];
+
+  // Function to create a map and get the score
+  function getStudentScore(name) {
+    const studentMap = new Map();
+    students.forEach(student => {
+      studentMap.set(student.name, student.score);
+    });
+    return studentMap.get(name) || 'Not found';
+  }
+
+  // Handle button click
+  function showScore() {
+    const name = document.getElementById("studentName").value;
+    const score = getStudentScore(name);
+    document.getElementById("demo").textContent = score;
+  }
+</script>
+</html>

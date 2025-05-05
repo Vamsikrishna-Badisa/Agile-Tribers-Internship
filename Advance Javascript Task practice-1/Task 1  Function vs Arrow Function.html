@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Function vs Arrow Function</title>
+</head>
+<body>
+  <h2>Square Numbers using Traditional and Arrow Functions</h2>
+
+  <p>Input: [1, 2, 3, 4, 5]</p>
+  <p><strong>Traditional Function Output:</strong> <span id="demo"></span></p>
+</body>
+
+<script>
+    // Traditional function
+   function squareNumbersTraditional(numbers) {
+ return numbers.map(function(num) {
+   return num * num;
+ });
+}
+   // Arrow function
+   const squareNumbersArrow = (numbers) => numbers.map(num => num * num);
+
+   // Sample input
+   const input = [1, 2, 3, 4, 5];
+
+   // Call both functions
+   const resultTraditional = squareNumbersTraditional(input);
+   const resultArrow = squareNumbersArrow(input);
+
+   // Display results
+   document.getElementById("demo").textContent = JSON.stringify(resultTraditional);
+ </script>
+</html>
